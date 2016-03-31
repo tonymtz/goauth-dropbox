@@ -1,7 +1,7 @@
 // Package dropbox implement OAuth2 authentication for Dropbox
 // providing an handler (OAuth2Handler) which perform OAuth token authorization
 // and exchange.
-package dropbox
+package dropboxOAuth
 
 import (
     "fmt"
@@ -23,7 +23,7 @@ type Token struct {
     // Dropbox user id
     UID   string `json:"uid"`
 
-    // Dropbox bearer access token. Can be used to make 
+    // Dropbox bearer access token. Can be used to make
     // API call to Dropbox CORE API.
     // https://www.dropbox.com/developers/core/docs
     Token string `json:"access_token"`
